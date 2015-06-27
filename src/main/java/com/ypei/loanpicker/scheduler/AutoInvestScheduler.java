@@ -3,6 +3,8 @@ package com.ypei.loanpicker.scheduler;
 import static org.quartz.JobBuilder.newJob;
 import static org.quartz.TriggerBuilder.newTrigger;
 
+import java.util.TimeZone;
+
 import org.apache.log4j.Logger;
 import org.quartz.CronScheduleBuilder;
 import org.quartz.CronTrigger;
@@ -36,8 +38,12 @@ public class AutoInvestScheduler {
 					.withIdentity("investTrigger", group)
 					.withSchedule(
 							CronScheduleBuilder.cronSchedule(Cfg.m
-									.get(Cfg.T.CRON_EXPRESSION.name())))
-					.build();
+									.get(Cfg.T.CRON_EXPRESSION.name()))
+								//add timezone
+							.inTimeZone(TimeZone.getTimeZone("America/Los_Angeles"))		
+							)
+					
+									.build();
 
 			sched.scheduleJob(job, trigger);
 

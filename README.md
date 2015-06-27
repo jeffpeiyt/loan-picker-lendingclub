@@ -1,6 +1,7 @@
 Loan Picker for Lending Club
 ===================
 Cherry pick and auto invest the loans with your own customized rules and scheduler.  (Simple Java / Maven Build)
+http://jeffpeiyt.github.io/loan-picker-lendingclub/
 
 ## Motivation
 Current lending club investment filters have limitations and cannot specify every details. e.g. can only choose delinquency > 60 months, however I always like to choose loans that never have any delinquency history. Or to avoid certain keywords in borrowers jobs.   Also, interestingly some loan attributes seem only available thru API rather than the web interface (e.g. The following are only availabel  numTl30dpd: Number of accounts currently 30 days past due (updated in past 2 months) or expDefaultRate: expected default rate) . 

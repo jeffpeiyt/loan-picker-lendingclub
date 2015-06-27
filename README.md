@@ -54,7 +54,7 @@ To build and run, make sure to copy the application.conf with correct credential
 
 ###Scheduler
 - Turn on scheduler by setting RUN_AS_SCHEDULER=true in application.conf.  
-- It will run at 6/10/14/18 pacific time. (this expression can be changed) note that timezone is America/Los_Angeles.   
+- It will run at 6,10,14,18 pacific time following LC timing. (this expression can be changed) note that timezone is America/Los_Angeles.   
 - Everytime it will run 20 times after :00 ; each with 15 sec interval.  So it will run around :00 to :06 every 4 hours during the day time.  Duplicated will be avoided so multiple run is fine. This multiple run is performed because loans may not come out at exactly the same time.  Check InvestJob.java to change these interval/loop times.
 
 ###Sample Config Files
@@ -71,7 +71,7 @@ To build and run, make sure to copy the application.conf with correct credential
 	PURCHASE_LIMIT=10
 	IN_DEBUG=false
 	RUN_AS_SCHEDULER=false
-	CRON_EXPRESSION=0 * 6/10/14/18 * * ?
+	CRON_EXPRESSION=0 0 6,10,14,18 * * ?
 
 
 

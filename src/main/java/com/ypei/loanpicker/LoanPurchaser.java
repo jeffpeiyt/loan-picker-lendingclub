@@ -30,7 +30,7 @@ public class LoanPurchaser {
 	public static final HttpTransport HTTP_TRANSPORT = new ApacheHttpTransport();
 	public static final JsonFactory JSON_FACTORY = new JacksonFactory();
 
-	private static Logger logger = Logger.getLogger(LoanLoader.class);
+	private static Logger logger = Logger.getLogger(LoanPurchaser.class);
 
 	public static List<OrderConfirmation> purchaseLoans(List<Loan> loansPicked, Set<Long> ownedLoanIds) {
 

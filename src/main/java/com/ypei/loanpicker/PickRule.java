@@ -1,5 +1,7 @@
 package com.ypei.loanpicker;
 
+import org.apache.log4j.Logger;
+
 import com.ypei.loanpicker.beans.Loan;
 
 /**
@@ -100,7 +102,6 @@ import com.ypei.loanpicker.beans.Loan;
  *
  */
 public class PickRule {
-	
 	public static boolean pickBasedOnRule (Loan l){
 		
 		return  (l.term == 36

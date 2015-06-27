@@ -10,3 +10,12 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+<<<<<<< HEAD
+
+.DS_Store
+application.conf.local
+PickRule.java.local
+log
+/target/
+=======
+>>>>>>> 41747e64852cefc47ff6b6233eb605ccfe0c183b

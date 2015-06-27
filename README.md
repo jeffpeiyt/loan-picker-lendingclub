@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Loan Picker for Lending Club
 ===================
 Cherry pick and auto invest the loans with your own customized rules and scheduler.  (Simple Java / Maven Build)
@@ -230,7 +229,3 @@ Note that One already purchased loan is skipped in the purchase process.
 	***********START_NEW_LOAN_PICKER_PROCESS***********
 	...
 	***********END_NEW_LOAN_PICKER_PROCESS***********
-=======
-# loan-picker-lendingclub
-Cherry pick and auto invest the loans with your own customized rules. (Simple Java / Maven Build) 
->>>>>>> 41747e64852cefc47ff6b6233eb605ccfe0c183b

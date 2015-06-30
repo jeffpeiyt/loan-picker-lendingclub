@@ -20,8 +20,8 @@ Initially I just want to have a fine grain control on the filter and try to leve
 
 
 ##Features
-  - Auto excludes already purchased loans in note picking.
   - On demand or scheduled auto investing at loan published time.
+  - Auto excludes already purchased loans in note picking.
   - Config based token / inverstor id / portfolio id input (application.conf).
   - Fine-grained cherry picking your loans with your own rules. 
   - Able to set maximum number of loan purchase each time.
@@ -41,7 +41,7 @@ Clone/Download this repo.
 	- **Portfolio ID**: Go https://www.lendingclub.com/developers/portfolios-owned.action to get your portfolio ID. Your ordered notes will be saved here. Or create a new one using this API: https://www.lendingclub.com/developers/create-portfolio.action 
 2. Edit the [**PickRule.java**](https://github.com/jeffpeiyt/loan-picker-lendingclub/blob/master/src/main/java/com/ypei/loanpicker/PickRule.java) file with your own rules.
 3. Build the app with maven command or import as existing maven project into Eclipse/Intellij to run. 
-4. Auto Invest with scheduling: Put it into crontab(http://unixhelp.ed.ac.uk/CGI/man-cgi?crontab+5) to auto run it with cron expression.
+4. Run: Turn on scheduler by setting RUN_AS_SCHEDULER=true . Otherwise will run as one-time executor.
 
 
 ###Build and Run
@@ -169,7 +169,7 @@ Note that One already purchased loan is skipped in the purchase process.
 	Config loaded: Key : PURCHASE_LIMIT, Value : 2
 	Config loaded: Key : RUN_AS_SCHEDULER, Value : false
 	Config loaded: Key : PORTFOLIO_ID, Value : ****
-	Config loaded: Key : CRON_EXPRESSION, Value : 0 * 6/10/14/18 * * ?
+	Config loaded: Key : CRON_EXPRESSION, Value : 0 * 6,10,14,18 * * ?
 
 	***********START_AS_ONE_TIME_EXECUTOR***********
 	***********START_NEW_LOAN_PICKER_PROCESS***********

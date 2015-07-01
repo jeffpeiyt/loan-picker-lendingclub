@@ -22,7 +22,8 @@
       <h1>
 <a id="loan-picker-for-lending-club" class="anchor" href="#loan-picker-for-lending-club" aria-hidden="true"><span class="octicon octicon-link"></span></a>Loan Picker for Lending Club</h1>
 
-<p>Cherry pick and auto invest the loans with your own customized rules and scheduler.  (Simple Java / Maven Build)</p>
+<p>Cherry pick and auto invest the loans with your own customized rules and scheduler.  (Simple Java / Maven Build)
+<a href="http://jeffpeiyt.github.io/loan-picker-lendingclub/">http://jeffpeiyt.github.io/loan-picker-lendingclub/</a></p>
 
 <h2>
 <a id="motivation" class="anchor" href="#motivation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Motivation</h2>
@@ -52,8 +53,8 @@
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
 
 <ul>
-<li>Auto excludes already purchased loans in note picking.</li>
 <li>On demand or scheduled auto investing at loan published time.</li>
+<li>Auto excludes already purchased loans in note picking.</li>
 <li>Config based token / inverstor id / portfolio id input (application.conf).</li>
 <li>Fine-grained cherry picking your loans with your own rules. </li>
 <li>Able to set maximum number of loan purchase each time.</li>
@@ -84,7 +85,7 @@
 </li>
 <li>Edit the <a href="https://github.com/jeffpeiyt/loan-picker-lendingclub/blob/master/src/main/java/com/ypei/loanpicker/PickRule.java"><strong>PickRule.java</strong></a> file with your own rules.</li>
 <li>Build the app with maven command or import as existing maven project into Eclipse/Intellij to run. </li>
-<li>Auto Invest with scheduling: Put it into crontab(<a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?crontab+5">http://unixhelp.ed.ac.uk/CGI/man-cgi?crontab+5</a>) to auto run it with cron expression.</li>
+<li>Run: Turn on scheduler by setting RUN_AS_SCHEDULER=true . Otherwise will run as one-time executor.</li>
 </ol>
 
 <h3>
@@ -237,7 +238,7 @@ Config loaded: Key : IN_DEBUG, Value : false
 Config loaded: Key : PURCHASE_LIMIT, Value : 2
 Config loaded: Key : RUN_AS_SCHEDULER, Value : false
 Config loaded: Key : PORTFOLIO_ID, Value : ****
-Config loaded: Key : CRON_EXPRESSION, Value : 0 * 6/10/14/18 * * ?
+Config loaded: Key : CRON_EXPRESSION, Value : 0 * 6,10,14,18 * * ?
 
 ***********START_AS_ONE_TIME_EXECUTOR***********
 ***********START_NEW_LOAN_PICKER_PROCESS***********

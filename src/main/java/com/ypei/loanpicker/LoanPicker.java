@@ -1,7 +1,9 @@
 package com.ypei.loanpicker;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 import org.apache.log4j.Logger;
 
@@ -24,6 +26,11 @@ public class LoanPicker {
 				}
 			}
 
+			logger.info("-----------------------------------------------");
+			logger.info("Randomized notes order in the list...");
+			long seed = System.nanoTime();
+			Collections.shuffle(loansPicked, new Random(seed));
+			
 			int i = 1, len = loansPicked.size();
 			for (Loan l : loansPicked) {
 

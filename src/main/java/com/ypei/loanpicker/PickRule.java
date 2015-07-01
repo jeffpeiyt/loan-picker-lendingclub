@@ -102,7 +102,12 @@ import com.ypei.loanpicker.beans.Loan;
  *
  */
 public class PickRule {
+	
+	private static Logger logger = Logger.getLogger(PickRule.class);
+	
 	public static boolean pickBasedOnRule (Loan l){
+		
+		logger.info("PICK_RULE_CDE APPLIED on Loan " + l.id);
 		
 		return  (l.term == 36
 				&& (l.grade.contains("D") || l.grade.contains("E") || l.grade

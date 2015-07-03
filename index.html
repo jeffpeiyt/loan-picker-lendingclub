@@ -22,14 +22,19 @@
       <h1>
 <a id="loan-picker-for-lending-club" class="anchor" href="#loan-picker-for-lending-club" aria-hidden="true"><span class="octicon octicon-link"></span></a>Loan Picker for Lending Club</h1>
 
-<p>Cherry pick and auto invest lending club loans with customized rules. (Simple Java / Maven Build)</p>
+<p>Cherry pick and auto invest the loans with fully customized rules and scheduler.  (Simple Java / Maven Build)
+<a href="http://jeffpeiyt.github.io/loan-picker-lendingclub/">http://jeffpeiyt.github.io/loan-picker-lendingclub/</a></p>
+
+<p>Immediately get new loans - Choose when and how to invest with fully customizable auto invest scheduler, featuring multiple interval retries and auto filtering existing loans.</p>
+
+<p>No more paying fees for auto investing or missing a loan! Ads-free, tiny clean package at your own inspection <strong>forever free</strong>.</p>
 
 <h2>
 <a id="motivation" class="anchor" href="#motivation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Motivation</h2>
 
 <p>Current lending club investment filters have limitations and cannot specify every details. e.g. can only choose delinquency &gt; 60 months, however I always like to choose loans that never have any delinquency history. Or to avoid certain keywords in borrowers jobs.   Also, interestingly some loan attributes seem only available thru API rather than the web interface (e.g. The following are only availabel  numTl30dpd: Number of accounts currently 30 days past due (updated in past 2 months) or expDefaultRate: expected default rate) . </p>
 
-<p>Initially I just want to have a fine grain control on the filter and try to leverage existing libraries. However, seems none of them can satisfy my need after reviewing these available packages.  There comes this LoanPicker. The following were investigated but they have limited filtering options.</p>
+<p>Initially I just want to have a fine grain control on the filters and try to leverage existing libraries. However, seems none of them can satisfy my need after reviewing these available packages.  There comes this LoanPicker. The following were investigated but they have limited filtering options.</p>
 
 <ol>
 <li>Lending club saved filters</li>
@@ -46,7 +51,7 @@
 <h2>
 <a id="declaration" class="anchor" href="#declaration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Declaration</h2>
 
-<p><strong>USE IT AT YOUR OWN RISK. Protect your credentials.</strong> It is open source, free, so simple, and everyone can inspect the code. This is a primitive version but is fully functional. You have to change the <a href="https://github.com/jeffpeiyt/loan-picker-lendingclub/blob/master/src/main/java/com/ypei/loanpicker/PickRule.java"><strong>PickRule.java</strong></a> to edit the right rule.  Later we may like to make the rule as YAML file if needed.  Although this is hard coded, it is pretty straightforward to edit it.</p>
+<p><strong>USE IT AT YOUR OWN RISK. Protect your credentials.</strong> It is open source, free, so simple, and everyone can inspect the code. This is a primitive version but is fully functional. I used is for 2 weeks and saves me tons of effort and really able to get the great loans at the first moment. You will need to change the <a href="https://github.com/jeffpeiyt/loan-picker-lendingclub/blob/master/src/main/java/com/ypei/loanpicker/PickRule.java"><strong>PickRule.java</strong></a> to edit the right rule.  Later we may like to make the rule as YAML file if needed.  Although this is hard coded, it is pretty straightforward to edit it.</p>
 
 <h2>
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
@@ -290,7 +295,7 @@ Config loaded: Key : IN_DEBUG, Value : false
 Config loaded: Key : PURCHASE_LIMIT, Value : 2
 Config loaded: Key : RUN_AS_SCHEDULER, Value : true
 Config loaded: Key : PORTFOLIO_ID, Value : ****
-Config loaded: Key : CRON_EXPRESSION, Value : 0 * 6,10,14,18 * * ?
+Config loaded: Key : CRON_EXPRESSION, Value : 0 * 6/10/14/18 * * ?
 ***********START_AS_SCHEDULER***********
 START_THIS_ROUND_OF_LOOP_IN_INVEST_JOB:group1.investJob executing at 2015.06.26.16.19.30.010-0700
 LOOP_1/2 STARTS_NOW...

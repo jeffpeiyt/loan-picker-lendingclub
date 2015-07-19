@@ -22,10 +22,10 @@
       <h1>
 <a id="loan-picker-for-lending-club" class="anchor" href="#loan-picker-for-lending-club" aria-hidden="true"><span class="octicon octicon-link"></span></a>Loan Picker for Lending Club</h1>
 
-<p>Cherry pick and auto invest the loans with fully customized rules and scheduler.  (Simple Java / Maven Build)
+<p>Cherry pick and auto invest the loans with fully customizable rules and scheduler.  (Simple Java / Maven Build)
 <a href="http://jeffpeiyt.github.io/loan-picker-lendingclub/">http://jeffpeiyt.github.io/loan-picker-lendingclub/</a></p>
 
-<p>Immediately get new loans - Choose when and how to invest with fully customizable auto invest scheduler, featuring multiple interval retries and auto filtering existing loans.</p>
+<p>Immediately get new loans - Choose when and how to invest with fully customizable auto invest scheduler, featuring multiple interval retries and auto filtering already purchased loans. Check <a href="https://github.com/jeffpeiyt/loan-picker-lendingclub#screenshots">Screenshot</a> below on successful auto investing with regular interval emails of "Investment order received".</p>
 
 <p>No more paying fees for auto investing or missing a loan! Ads-free, tiny clean package at your own inspection <strong>forever free</strong>.</p>
 
@@ -49,9 +49,12 @@
 </ol>
 
 <h2>
-<a id="declaration" class="anchor" href="#declaration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Declaration</h2>
+<a id="auto-investing-success-screenshot" class="anchor" href="#auto-investing-success-screenshot" aria-hidden="true"><span class="octicon octicon-link"></span></a>Auto Investing Success Screenshot<a id="screenshots"></a>
+</h2>
 
-<p><strong>USE IT AT YOUR OWN RISK. Protect your credentials.</strong> It is open source, free, so simple, and everyone can inspect the code. This is a primitive version but is fully functional. I used is for 2 weeks and saves me tons of effort and really able to get the great loans at the first moment. You will need to change the <a href="https://github.com/jeffpeiyt/loan-picker-lendingclub/blob/master/src/main/java/com/ypei/loanpicker/PickRule.java"><strong>PickRule.java</strong></a> to edit the right rule.  Later we may like to make the rule as YAML file if needed.  Although this is hard coded, it is pretty straightforward to edit it.</p>
+<p>Proof of success loan-picker auto investing: Screenshots on regular interval emails of "Investment order received"</p>
+
+<p><img src="https://raw.githubusercontent.com/jeffpeiyt/loan-picker-lendingclub/master/screenshot1.png" alt="Auto Investing At Loan Release Time Email"></p>
 
 <h2>
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
@@ -66,6 +69,13 @@
 <li>Logging with rotations to file and also to console. </li>
 <li>Dry run mode: IN_DEBUG set in application.conf: will not actually purchase the notes in this mode.</li>
 </ul>
+
+<hr>
+
+<h2>
+<a id="declaration" class="anchor" href="#declaration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Declaration</h2>
+
+<p><strong>USE IT AT YOUR OWN RISK. Protect your credentials.</strong> It is open source, free, so simple, and everyone can inspect the code. This is a primitive version but is fully functional. I used it since 06/27/2015 and saves me tons of effort and really able to get the great loans at the first moment. You will need to change the <a href="https://github.com/jeffpeiyt/loan-picker-lendingclub/blob/master/src/main/java/com/ypei/loanpicker/PickRule.java"><strong>PickRule.java</strong></a> to edit the right rule.  Later we may like to make the rule as YAML file if needed.  Although this is hard coded, it is pretty straightforward to edit it.</p>
 
 <hr>
 

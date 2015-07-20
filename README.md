@@ -3,7 +3,7 @@ Loan Picker for Lending Club
 Cherry pick and auto invest the loans with fully customizable rules and scheduler.  (Simple Java / Maven Build)
 http://jeffpeiyt.github.io/loan-picker-lendingclub/
 
-Immediately get new loans - Choose when and how to invest with fully customizable auto invest scheduler, featuring multiple interval retries and auto filtering existing loans.
+Immediately get new loans - Choose when and how to invest with fully customizable auto invest scheduler, featuring multiple interval retries and auto filtering already purchased loans. Check [Screenshot](https://github.com/jeffpeiyt/loan-picker-lendingclub#screenshots) below on successful auto investing with regular interval emails of "Investment order received".
 
 No more paying fees for auto investing or missing a loan! Ads-free, tiny clean package at your own inspection **forever free**.
 
@@ -19,8 +19,12 @@ Initially I just want to have a fine grain control on the filters and try to lev
 
 
 
-## Declaration
-**USE IT AT YOUR OWN RISK. Protect your credentials.** It is open source, free, so simple, and everyone can inspect the code. This is a primitive version but is fully functional. I used is for 2 weeks and saves me tons of effort and really able to get the great loans at the first moment. You will need to change the [**PickRule.java**](https://github.com/jeffpeiyt/loan-picker-lendingclub/blob/master/src/main/java/com/ypei/loanpicker/PickRule.java) to edit the right rule.  Later we may like to make the rule as YAML file if needed.  Although this is hard coded, it is pretty straightforward to edit it.
+
+##Auto Investing Success Screenshot<a id="screenshots"></a>
+Proof of success loan-picker auto investing: Screenshots on regular interval emails of "Investment order received"
+
+![Auto Investing At Loan Release Time Email](https://raw.githubusercontent.com/jeffpeiyt/loan-picker-lendingclub/master/screenshot1.png)
+
 
 
 ##Features
@@ -32,6 +36,12 @@ Initially I just want to have a fine grain control on the filters and try to lev
   - Simple change in  [**PickRule.java**](https://github.com/jeffpeiyt/loan-picker-lendingclub/blob/master/src/main/java/com/ypei/loanpicker/PickRule.java) to change **any** rules in details as you wish. TODO: change to YAML based rules
   - Logging with rotations to file and also to console. 
   - Dry run mode: IN_DEBUG set in application.conf: will not actually purchase the notes in this mode.
+
+---------- 
+
+##Declaration
+**USE IT AT YOUR OWN RISK. Protect your credentials.** It is open source, free, so simple, and everyone can inspect the code. This is a primitive version but is fully functional. I used it since 06/27/2015 and saves me tons of effort and really able to get the great loans at the first moment. You will need to change the [**PickRule.java**](https://github.com/jeffpeiyt/loan-picker-lendingclub/blob/master/src/main/java/com/ypei/loanpicker/PickRule.java) to edit the right rule.  Later we may like to make the rule as YAML file if needed.  Although this is hard coded, it is pretty straightforward to edit it.
+
 
 ----------  
 
@@ -117,6 +127,9 @@ https://www.lendingclub.com/developers/listed-loans.action
 					);
 		}
 	}
+
+
+
 
 ----------
 

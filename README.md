@@ -7,6 +7,8 @@ Immediately get new loans - Choose when and how to invest with fully customizabl
 
 No more paying fees for auto investing or missing a loan! Ads-free, tiny clean package at your own inspection **forever free**.
 
+Great foundation of smart /machine learning investing: Easily extensible to build a machine learning investing strategy based rules/filters to dynamic select the best notes.
+
 ## Motivation
 Current lending club investment filters have limitations and cannot specify every details. e.g. can only choose delinquency > 60 months, however I always like to choose loans that never have any delinquency history. Or to avoid certain keywords in borrowers jobs.   Also, interestingly some loan attributes seem only available thru API rather than the web interface (e.g. The following are only availabel  numTl30dpd: Number of accounts currently 30 days past due (updated in past 2 months) or expDefaultRate: expected default rate) . 
 

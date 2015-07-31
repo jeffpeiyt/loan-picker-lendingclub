@@ -51,7 +51,8 @@ public class OwnedNoteLoader {
 			logger.info("REQEST_LC_OWNED_NOTES....");
 			HttpRequest request = requestFactory.buildGetRequest(url);
 			NoteList nl = request.execute().parseAs(NoteList.class);
-			if (nl.myNotes.isEmpty()) {
+			//fix NPE Thanks @mvillere 
+			if (nl.myNotes == null || nl.myNotes.isEmpty()) {
 				System.out.println("No notes found for you.");
 			} else {
 				logger.info("-----------------------------------------------");
